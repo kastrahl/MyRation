@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/drawlogo"
+    android:gravity="bottom"
+    android:layout_height="200sp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20sp"
+        android:src="@drawable/science2">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="15sp"
+        android:fontFamily=""
+        android:paddingTop="8sp"
+        android:text="KASTRAHL"
+        android:textColor="#A9A9A9"
+        app:fontFamily="serif" />
+</LinearLayout>

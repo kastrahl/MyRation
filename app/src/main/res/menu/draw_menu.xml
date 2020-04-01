@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_addinv"
+            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            android:title="ADD INVENTORY" />
+        <item
+            android:id="@+id/nav_addrecipe"
+            android:icon="@drawable/ic_local_dining_black_24dp"
+            android:title="RECIPES" />
+        <item
+            android:id="@+id/nav_MEALS"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="MEALS" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="Send" />
+        </menu>
+    </item>
+</menu>
