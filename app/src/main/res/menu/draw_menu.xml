@@ -13,10 +13,6 @@
             android:icon="@drawable/ic_add_shopping_cart_black_24dp"
             android:title="ADD INVENTORY" />
         <item
-            android:id="@+id/nav_addrecipe"
-            android:icon="@drawable/ic_local_dining_black_24dp"
-            android:title="RECIPES" />
-        <item
             android:id="@+id/nav_MEALS"
             android:icon="@drawable/ic_restaurant_black_24dp"
             android:title="MEALS" />
