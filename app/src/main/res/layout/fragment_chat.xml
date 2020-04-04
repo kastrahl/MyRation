@@ -1,15 +1,1107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="chat Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="386dp"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/rice" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="10sp"
+                            android:text="WHITE RICE"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvalueA"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/addA1"
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockA"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:textSize="9sp"
+                            android:inputType="numberSigned">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/setA1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setA"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="9sp"
+                            android:inputType="numberSigned">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewB"
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/groundwheat" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="WHEAT"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewB"
+                            android:paddingLeft="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvalueB"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockB"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button2B"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setB"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
 
 
-</RelativeLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/raajma" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="KIDNEY BEAN"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewC"
+                            android:paddingLeft="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvaluec"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockC"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button2C"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setC"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/chanadal" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="CHANAA DAL"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewD"
+                            android:paddingLeft="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvalueD"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockD"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button2D"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setD"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewE"
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/moongdal" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="MOONG DAL"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewE"
+                            android:paddingLeft="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvalueE"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockE"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button2E"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setE"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewF"
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/potato" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="POTATOES"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewF"
+                            android:paddingLeft="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvalueF"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockF"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button2F"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setF"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/teapowder" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="TEA POWDER"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewG"
+                            android:paddingLeft="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvalueG"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockG"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button2G"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setG"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewH"
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/milk" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="MILK"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewH"
+                            android:paddingLeft="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvalueH"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockH"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="enter in ml"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button2H"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setH"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="enter in ml"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewI"
+                    android:layout_width="125sp"
+                    android:layout_height="100sp"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/kalachana"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="30sp"
+                        android:layout_height="50sp">
+
+                        <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
+                            android:layout_width="150sp"
+                            android:layout_height="30dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="KALA CHANA"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="85sp"
+                            android:layout_height="match_parent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewI"
+                            android:paddingLeft="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="CURRENT STOCK:" />
+
+                        <TextView
+                            android:id="@+id/stockvalueI"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="30sp"
+                            android:text="add"
+                            android:textSize="10sp">
+
+                        </Button>
+
+                        <EditText
+                            android:id="@+id/addstockI"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5sp"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button2I"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4sp"
+                            android:background="#6495ED"
+                            android:text="SET"
+                            android:textColor="@color/white2"
+                            android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/setI"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="enter in grams"
+                            android:textSize="9sp">
+
+                        </EditText>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+</ScrollView>
