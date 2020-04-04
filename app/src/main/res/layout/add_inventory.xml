@@ -7,9 +7,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <TableRow
-            android:layout_width="386dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="5sp">
 
@@ -33,11 +32,11 @@
                         android:layout_height="50sp">
 
                         <TextView
+                            android:paddingTop="10sp"
+                            android:paddingLeft="5sp"
                             android:layout_width="150sp"
                             android:layout_height="30dp"
                             android:fontFamily="sans-serif-black"
-                            android:paddingLeft="5sp"
-                            android:paddingTop="10sp"
                             android:text="WHITE RICE"
                             android:textSize="15sp"
                             android:textStyle="bold">
@@ -56,9 +55,9 @@
 
                         <TextView
                             android:id="@+id/textView"
+                            android:paddingLeft="5sp"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:paddingLeft="5sp"
                             android:paddingTop="5sp"
                             android:text="CURRENT STOCK:" />
 
@@ -78,7 +77,6 @@
                         android:layout_height="match_parent">
 
                         <Button
-                            android:id="@+id/addA1"
                             android:layout_width="match_parent"
                             android:layout_height="30sp"
                             android:text="add"
@@ -91,8 +89,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:paddingTop="5sp"
-                            android:textSize="9sp"
-                            android:inputType="numberSigned">
+                            android:text="enter in grams"
+                            android:textSize="9sp">
 
                         </EditText>
 
@@ -103,7 +101,7 @@
                         android:layout_height="wrap_content">
 
                         <Button
-                            android:id="@+id/setA1"
+                            android:id="@+id/button2A"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="4sp"
@@ -116,8 +114,8 @@
                             android:id="@+id/setA"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:textSize="9sp"
-                            android:inputType="numberSigned">
+                            android:text="enter in grams"
+                            android:textSize="9sp">
 
                         </EditText>
 
